@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-size: 3vh;
+    line-height: 6.5vh;
+    font-family: 'Lucida Console', 'Monaco', 'Courier New', monospace;
+}
+.banner {
+    
+}
+
+#wrapper {
+    display: block;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(200, 191, 231);
+}
+.container {
+    flex-grow: 1;
+    width: 33%;
+    height: 100px;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 2px solid rgb(41, 41, 41);
+}
+
+footer {
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
