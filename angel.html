@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Siren Hotline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="angelstyle.css" />
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <div class="wrapper">
+        <div class=banner>
+          <a href="angelSecret3.html">
+            <img src="angelbanner.jpg" width="645" height="120">
+          </a>
+        </div>
+        <h1 style="font-size: 50px; text-align: center;">
+            <i><u>ANGEL!</u></i>
+        </h1>
+      </div>
+    <div class="wider-wrapper">
+        <div class="half-container">
+            <div class="left-half">
+                <ul class="escort-container">
+                  <a href='angelSecret2.html'>
+                    <li class="escort" id="angel-pic"> 
+                      <img src="profs\angel.jpg" width="300" height="300">
+                    </li>
+                  </a>
+                  </ul>
+            </div>
+            <div class="right-half">
+                <p style="font-size:30px; padding-top: 25px;">
+                  I can make you live online AND <i>die in real life!</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <footer>
+          <h1 class="interest-services"> 
+            INTERESTED IN MY SERVICES? <br> <br> <br>
+          </h1>
+          <h1 class="interest-services" id="call-now"> 
+            <i>CALL NOW</i>
+          </h1>
+
+          <hr class="solid">
+          <p style="text-align: center;">(<a href="home.html">go home</a>)</p>
+        </footer>
+    </div>
+
+
+    </div>
+    <script>
+      //wait 10 seconds
+      setTimeout(function(){
+      //make CALL NOW a link
+        var callNow = document.getElementById("call-now");
+        callNow.innerHTML = "<a href='angelSecret.html'><i>CALL NOW</i></a>"
+      }, 8000);
+
+      const timeBetweenCurses = 3000;
+      const timeCursed = 200;
+
+      var fadeInFunction = setInterval(myTimer, timeBetweenCurses);
+
+      //MAKE ANGEL FLICKER
+      //first get image
+      var image = document.getElementById("angel-pic");
+      function myTimer() {
+        //change something with image
+        image.innerHTML = '<img src="profs\\angelCursed.jpg" width="300" height="300">'
+        //hold for half a second
+        setTimeout(function(){
+          //change back
+          image.innerHTML = '<img src="profs\\angel.jpg" width="300" height="300">'
+        }, timeCursed);
+      }
+    </script>
+    </body>
+</html>
+
