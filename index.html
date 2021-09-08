@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Siren Hotline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <script>
+      //function to play sound effect
+    function transition() {
+      var snd = new Audio("audio/calling.mp3");
+      snd.play();
+      snd.currentTime=0;
+      const connecting = document.getElementById("connecting");
+      connecting.innerHTML = "...connecting...";
+      setTimeout(function(){
+        //do what you need here
+        window.location.href = "chooseEscort.html";
+      }, 3500);
+    }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper-container">
+      <div class="wrapper" style="padding-bottom: 120px;">
+          <div class=banner>
+            <a href="index.html">
+              <img src="bannerTemp.png">
+            </a>
+          </div>
+          <h1>
+              Welcome to the Siren Hotline.
+          </h1>
+          <div class="centred">
+              <h2>
+                  ...call now?
+              </h2>   
+          </div>
+          <div class="centred">
+              <button onclick="transition()"> 
+                  <p>
+                      📞 
+                  </p>
+              </button>
+              <h2 id="connecting">
+                
+              </h2>
+          </div>
+      </div>
+      <div class="wrapper">
+        <iframe src="https://open.spotify.com/embed/track/7IM28Nyhb0MDEKpyqOBGg2" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="wrapper">
+        <footer>
+          <hr class="solid">
+          <p>Siren Hotline is proudly sponsored by <a href="angel.html"> ANGEL </a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
