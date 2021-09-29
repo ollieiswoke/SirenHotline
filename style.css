@@ -160,3 +160,54 @@ audio{
     height: 170%;
     display: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .wider-wrapper {
+        flex-flow: column;
+        display: block;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    .escort-container{
+        flex-flow: column;
+    }
+    img {
+        display: block;
+        max-width:300px;
+        max-height:300px;
+        width: auto;
+        height: auto;
+    }
+    #small{
+        display: block;
+        max-width:300px;
+        max-height:300px;
+        width: auto;
+        height: auto;
+    }
+    .wrapper {
+        display: block;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+    footer {
+        width: 300px;
+    }
+    .half-container {
+        flex-flow: column;
+    }
+    .right-half {
+        margin-left: 0px;
+        margin-top: 75px;
+    }
+    #cursed-image {
+        max-width: 0%;
+        max-height: 0%;
+        display: none;
+    }
+}
