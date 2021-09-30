@@ -160,7 +160,9 @@ audio{
     height: 170%;
     display: none;
 }
-
+#choose-escort {
+    font-size: 50px
+}
 
 @media only screen and (max-width: 600px) {
     .wider-wrapper {
@@ -173,6 +175,9 @@ audio{
     }
     .escort-container{
         flex-flow: column;
+    }
+    .escort-selectable{
+        height: 350px;
     }
     img {
         display: block;
@@ -209,5 +214,17 @@ audio{
         max-width: 0%;
         max-height: 0%;
         display: none;
+    }
+    #connecting {
+        font-size: 20px;
+    }
+    #call-now {
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #choose-escort {
+        font-size: 25px
     }
 }
